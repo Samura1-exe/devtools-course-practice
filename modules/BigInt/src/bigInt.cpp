@@ -123,8 +123,7 @@ BigInt operator*(const BigInt& a, const BigInt& b) {
 BigInt operator/(const BigInt& a, const BigInt& b) {
   std::pair<std::string, std::string> result =
       BigInt::divide(a.digits, b.digits);
-  return BigInt((a.is_negative != b.is_negative) ?
-      "-" + result.first : result.first);
+  return BigInt(result.second);
 }
 
 BigInt operator%(const BigInt& a, const BigInt& b) {

@@ -339,6 +339,10 @@ TEST(BigIntOperatorTest, DivideTest) {
     BigInt a("123");
     BigInt b("3");
     BigInt c = a / b;
+
+    BigInt r("823");
+
+    EXPECT_EQ(c, r);
 }
 
 TEST(BigIntOperatorTest, Test) {
