@@ -43,7 +43,7 @@ std::string CLPApplication::operator()(int argc, const char** argv) {
     return "success";
   }
 
-  return "success";
+  return "Wrong argument.";
 }
 
 std::string CLPApplication::help() {

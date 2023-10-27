@@ -21,11 +21,11 @@ set_tests_properties (${prefix}_get_help PROPERTIES
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_get_help2
-    COMMAND ${APPLICATION} --helpppp
+    NAME ${prefix}_wrong_arg
+    COMMAND ${APPLICATION} some_wrong_arg
 )
-set_tests_properties (${prefix}_get_help2 PROPERTIES
-    PASS_REGULAR_EXPRESSION "success"
+set_tests_properties (${prefix}_wrong_arg PROPERTIES
+    PASS_REGULAR_EXPRESSION "Wrong argument."
     LABELS "${MODULE}")
 
 add_test(
