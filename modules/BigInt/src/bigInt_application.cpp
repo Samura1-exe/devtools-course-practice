@@ -1,6 +1,7 @@
 // Copyright 2023 Titov Egor
 
 #include "include/bigInt_application.h"
+
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
@@ -38,7 +39,7 @@ std::string CLPApplication::operator()(int argc, const char** argv) {
     if (op == "*") {
       os << a * b;
     }
-    
+
     std::cout << os.str() << std::endl;
     return "success";
   }
